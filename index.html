@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170b12">
+  <title>For Ruhi — A Little World of Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <audio autoplay ">
+    <source src="tum hi ho.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="background-glow"></div>
+  <div class="stars" id="stars"></div>
+  <div class="petals" id="petals"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" id="brandHome">R<span>♡</span></a>
+    <div class="topbar-right">
+      <span id="chapterLabel">A LITTLE SURPRISE</span>
+      <button class="sound-button" id="soundButton" aria-label="Toggle ambient sound">♫</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. INTRO -->
+    <section class="screen active" id="intro">
+      <div class="intro-content">
+        <div class="orbit-heart">
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+          <div class="heart-core">♥</div>
+          <span class="orbit-star star-a">✦</span>
+          <span class="orbit-star star-b">✧</span>
+          <span class="orbit-star star-c">✦</span>
+        </div>
+
+        <p class="eyebrow">A LITTLE WORLD, MADE FOR YOU</p>
+        <h1 class="display-title">Somewhere between<br>dreams and <em>you.</em></h1>
+        <p class="intro-copy">
+          I made a little place for all the things<br class="desktop-only">
+          my heart sometimes forgets to say.
+        </p>
+        <button class="primary-button" data-go="welcome">
+          <span>For you, Ruhi</span><span class="button-arrow">↗</span>
+        </button>
+        <p class="tiny-note">MADE WITH LOVE · JUST FOR YOU</p>
+      </div>
+      <div class="bottom-scroll">A LITTLE MAGIC AWAITS <span>↓</span></div>
+    </section>
+
+    <!-- 2. WELCOME -->
+    <section class="screen" id="welcome">
+      <div class="chapter-number">01 <span>— A NOTE BEFORE YOU BEGIN</span></div>
+      <div class="welcome-card">
+        <span class="decorative-quote">“</span>
+        <p class="script-line">My dearest Ruhi,</p>
+        <h2 class="display-title small-title">
+          This little world<br>has only <em>one visitor.</em>
+        </h2>
+        <p class="body-copy">
+          You don't need a special occasion to be celebrated.
+          Sometimes, someone simply deserves a little reminder
+          of how much they mean.
+        </p>
+        <p class="body-copy">
+          So take your time. Look around. Every little corner
+          was made with you in mind.
+        </p>
+        <button class="text-button" data-go="door">Come inside <span>→</span></button>
+      </div>
+      <div class="floating-flower flower-one">✿</div>
+      <div class="floating-flower flower-two">❀</div>
+    </section>
+
+    <!-- 3. MUSEUM DOOR -->
+    <section class="screen" id="door">
+      <div class="chapter-number">02 <span>— THE MUSEUM OF US</span></div>
+      <p class="eyebrow">A PLACE THAT EXISTS FOR YOU</p>
+      <h2 class="display-title">Every room holds<br><em>a little piece of us.</em></h2>
+      <p class="body-copy center-copy">
+        No crowds. No noise. Just memories, words and promises.
+      </p>
+
+      <button class="museum-door" id="museumDoor" aria-label="Open the museum">
+        <span class="door-arch"></span>
+        <span class="door-panel"></span>
+        <span class="door-window"></span>
+        <span class="door-knocker">✦</span>
+        <span class="door-label">THE MUSEUM<br>OF US</span>
+        <span class="door-hint">TAP TO ENTER</span>
+      </button>
+      <p class="hint-text">Knock three times to open the door ♡</p>
+    </section>
+
+    <!-- 4. PHOTO GALLERY -->
+    <section class="screen" id="gallery">
+      <div class="chapter-number">ROOM 01 <span>— THE GALLERY</span></div>
+      <p class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</p>
+      <h2 class="display-title">Our little <em>universe.</em></h2>
+      <p class="body-copy center-copy">
+        Some moments are too lovely to leave in a camera roll.
+      </p>
+
+      <div class="photo-gallery">
+        <article class="photo-frame frame-one">
+          <div class="photo-inner">
+            <img src="photos/photo1.jpg" alt="A favourite memory" class="memory-photo">
+            <div class="photo-fallback"><span>♡</span><p>Our favourite memory</p><small>Add your first photo</small></div>
+          </div>
+          <div class="photo-caption">
+            <span>EXHIBIT Nº 01</span>
+            <p>A moment I want to keep.</p>
+          </div>
+        </article>
+
+        <article class="photo-frame frame-two">
+          <div class="photo-inner">
+            <img src="photos/photo2.jpg" alt="Another special memory" class="memory-photo">
+            <div class="photo-fallback"><span>✧</span><p>A little piece of us</p><small>Add your second photo</small></div>
+          </div>
+          <div class="photo-caption">
+            <span>EXHIBIT Nº 02</span>
+            <p>If only moments could stay.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="gallery-note">“The best part of a memory is having someone to share it with.”</div>
+      <button class="primary-button" data-go="puzzle">Keep walking <span class="button-arrow">→</span></button>
+    </section>
+
+    <!-- 5. PHOTO PUZZLE -->
+    <section class="screen" id="puzzle">
+      <div class="chapter-number">ROOM 02 <span>— THE RESTORATION DESK</span></div>
+      <p class="eyebrow">A LITTLE GAME FOR YOU</p>
+      <h2 class="display-title">Pieces of <em>our story.</em></h2>
+      <p class="body-copy center-copy">
+        Tap two pieces to swap them. Put this little memory back together.
+      </p>
+
+      <div class="puzzle-wrap">
+        <div class="puzzle-board" id="puzzleBoard" aria-label="Photo puzzle"></div>
+        <div class="puzzle-status"><span id="puzzleMoves">Moves: 0</span><span id="puzzleMessage">A little patience, love ♡</span></div>
+      </div>
+      <button class="outline-button" id="peekPuzzle">Show me the photo</button>
+      <button class="primary-button" data-go="notes">Next room <span class="button-arrow">→</span></button>
+    </section>
+
+    <!-- 6. NOTES / REASONS -->
+    <section class="screen" id="notes">
+      <div class="chapter-number">ROOM 03 <span>— THE NOTE WALL</span></div>
+      <p class="eyebrow">THINGS I WANT YOU TO KNOW</p>
+      <h2 class="display-title">Little reasons,<br><em>big love.</em></h2>
+      <p class="body-copy center-copy">Open each little note. They are all yours.</p>
+
+      <div class="notes-grid">
+        <button class="love-note" data-note="0"><span class="note-number">01</span><span class="note-symbol">♡</span><span class="note-label">Your smile</span><span class="note-reveal">It can make an ordinary day feel like the best day ever.</span></button>
+        <button class="love-note" data-note="1"><span class="note-number">02</span><span class="note-symbol">✧</span><span class="note-label">Your heart</span><span class="note-reveal">The way you care makes the world feel a little softer.</span></button>
+        <button class="love-note" data-note="2"><span class="note-number">03</span><span class="note-symbol">❀</span><span class="note-label">Your little ways</span><span class="note-reveal">Even the smallest things about you become favourite memories.</span></button>
+        <button class="love-note" data-note="3"><span class="note-number">04</span><span class="note-symbol">∞</span><span class="note-label">Being yourself</span><span class="note-reveal">You don't have to be perfect to be precious to me.</span></button>
+        <button class="love-note" data-note="4"><span class="note-number">05</span><span class="note-symbol">☾</span><span class="note-label">Your presence</span><span class="note-reveal">Somehow, things feel better when you're around.</span></button>
+      </div>
+
+      <button class="text-button" id="openAllNotes">Open all my notes ✧</button>
+      <button class="primary-button" data-go="letter">There's a letter for you <span class="button-arrow">→</span></button>
+    </section>
+
+    <!-- 7. LOVE LETTER -->
+    <section class="screen" id="letter">
+      <div class="chapter-number">ROOM 04 <span>— THE READING ROOM</span></div>
+      <p class="eyebrow">WRITTEN FROM THE HEART</p>
+      <h2 class="display-title">A letter, sealed<br><em>just for you.</em></h2>
+      <p class="body-copy center-copy">Some feelings deserve more than a text message.</p>
+
+      <div class="letter-stage">
+        <button class="sealed-envelope" id="sealedEnvelope" aria-label="Break the seal and open your letter">
+          <div class="envelope-paper">
+            <p class="letter-to">My dearest Ruhi,</p>
+            <p>
+              yaar gussa na ho 😙
+            </p>
+            <p>
+              bta bhi do kya baat hai 😮‍💨
+            </p>
+            <p>
+             tumse baat na ho to adhuri lagti har raat hai 🙂‍↔️
+            </p>
+            <p>
+              aapse baat kr ke dil ko sakun milta hai ❤️
+              bs aapse baat krne ka hi mn krta hai ❤️❤️
+              
+            </p>
+            <p class="letter-signature">R,<br><span>rahul ♡</span></p>
+          </div>
+          <div class="envelope-back"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-front-left"></div>
+          <div class="envelope-front-right"></div>
+          <div class="wax-seal">Rahul<span>♡</span></div>
+        </button>
+        <p class="hint-text" id="letterHint">Tap the wax seal to open your letter</p>
+      </div>
+
+      <button class="primary-button" data-go="promises">One last room <span class="button-arrow">→</span></button>
+    </section>
+
+    <!-- 8. PROMISES -->
+    <section class="screen" id="promises">
+      <div class="chapter-number">ROOM 05 <span>— THE PROMISE WALL</span></div>
+      <p class="eyebrow">NOT JUST WORDS</p>
+      <h2 class="display-title">Things worth <em>holding on to.</em></h2>
+      <p class="body-copy center-copy">Tap each promise you want to keep close.</p>
+
+      <div class="promise-list">
+        <button class="promise-item"><span class="promise-check">♡</span><span>To listen, even when words are hard to find.</span></button>
+        <button class="promise-item"><span class="promise-check">♡</span><span>To celebrate your little wins like they are huge.</span></button>
+        <button class="promise-item"><span class="promise-check">♡</span><span>To make room for laughter on ordinary days.</span></button>
+        <button class="promise-item"><span class="promise-check">♡</span><span>To be honest, patient and kind with each other.</span></button>
+        <button class="promise-item"><span class="promise-check">♡</span><span>To keep making memories, one little moment at a time.</span></button>
+      </div>
+      <p class="promise-counter" id="promiseCounter">0 promises held close</p>
+      <button class="primary-button" data-go="ending">Keep this with you <span class="button-arrow">→</span></button>
+    </section>
+
+    <!-- 9. ENDING -->
+    <section class="screen" id="ending">
+      <div class="ending-stars">✦　✧　♡　✧　✦</div>
+      <div class="ending-heart">♥</div>
+      <p class="eyebrow">AND THAT IS MY LITTLE WORLD</p>
+      <h2 class="display-title ending-title">If I had to choose<br>again, <em>I'd find you.</em></h2>
+      <p class="body-copy ending-copy">
+        Out of all the places, all the people and all the moments,
+        I'm glad our paths crossed.
+      </p>
+
+      <div class="final-card">
+        <p class="script-line">For Ruhi, with love</p>
+        <div class="final-divider">✦ ─── ♡ ─── ✦</div>
+        <p>This little museum was made just for you.</p>
+        <span class="final-date" id="finalDate">A memory in the making</span>
+      </div>
+
+      <p class="final-message">You are someone's favourite person. Never forget that. ♡</p>
+      <button class="outline-button" id="restartButton">Walk through it again ↺</button>
+      <p class="tiny-note">MADE WITH LOVE · ONLY FOR YOU</p>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
